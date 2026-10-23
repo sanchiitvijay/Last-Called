@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+      Only two runtime permissions. No INTERNET permission: the app cannot open network sockets.
+      See PERMISSIONS.md.
+    -->
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- The app works without a telephony radio (e.g. tablets); it just shows less data. -->
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+
+    <application
+        android:name=".LastCalledApplication"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:enableOnBackInvokedCallback="true"
+        android:theme="@style/Theme.LastCalled"
+        tools:targetApi="36">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--
+          Optional WhatsApp call detection. Must be exported so the system can bind it; it is
+          protected by BIND_NOTIFICATION_LISTENER_SERVICE, which only the system holds.
+          Disabled by the in-app setting until the user opts in.
+        -->
+        <service
+            android:name=".notifications.WhatsAppCallListenerService"
+            android:exported="true"
+            android:label="@string/notification_listener_label"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+            <!-- Call notifications are "ongoing" or "alerting"; skip silent / conversation ones. -->
+            <meta-data
+                android:name="android.service.notification.default_filter_types"
+                android:value="ongoing|alerting" />
+        </service>
+
+        <!--
+          Remove the exported baseline-profile receiver merged in from androidx.profileinstaller:
+          the app exports nothing it does not need.
+        -->
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            tools:node="remove" />
+    </application>
+</manifest>

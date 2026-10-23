@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Last Called</string>
+    <string name="notification_listener_label">Last Called – WhatsApp call detection</string>
+
+    <!-- Generic -->
+    <string name="action_refresh">Refresh</string>
+    <string name="action_search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_back">Back</string>
+    <string name="action_allow">Allow</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_not_now">Not now</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="action_try_again">Try again</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_done">Done</string>
+    <string name="action_see_all">See all</string>
+    <string name="action_clear_search">Clear search</string>
+
+    <!-- Labels -->
+    <string name="source_phone">Phone</string>
+    <string name="source_whatsapp">WhatsApp</string>
+    <string name="source_unknown">Unknown app</string>
+    <string name="type_voice">Voice</string>
+    <string name="type_video">Video</string>
+    <string name="type_unknown">Unknown type</string>
+    <string name="type_voice_call">Voice call</string>
+    <string name="type_video_call">Video call</string>
+    <string name="direction_outgoing">Outgoing</string>
+    <string name="direction_incoming">Incoming</string>
+    <string name="direction_missed">Missed</string>
+    <string name="direction_rejected">Rejected</string>
+    <string name="direction_unknown">Unknown direction</string>
+    <string name="call_phone">Phone call</string>
+    <string name="call_whatsapp_voice">WhatsApp voice</string>
+    <string name="call_whatsapp_video">WhatsApp video</string>
+    <string name="call_whatsapp">WhatsApp call</string>
+    <string name="call_video">Video call</string>
+    <string name="call_other_app">Call from another app</string>
+    <string name="origin_notification">Detected from a WhatsApp notification (approximate)</string>
+    <string name="unknown_number">Unknown number</string>
+    <string name="hidden_number">Private or hidden number</string>
+    <string name="not_in_contacts">Not in contacts</string>
+    <string name="from_whatsapp_notification">Seen in a WhatsApp notification</string>
+
+    <!-- Time -->
+    <string name="time_just_now">Just now</string>
+    <plurals name="time_minutes_ago">
+        <item quantity="one">%d minute ago</item>
+        <item quantity="other">%d minutes ago</item>
+    </plurals>
+    <plurals name="time_hours_ago">
+        <item quantity="one">%d hour ago</item>
+        <item quantity="other">%d hours ago</item>
+    </plurals>
+    <plurals name="time_days_ago">
+        <item quantity="one">%d day ago</item>
+        <item quantity="other">%d days ago</item>
+    </plurals>
+    <plurals name="time_years_ago">
+        <item quantity="one">%d year ago</item>
+        <item quantity="other">%d years ago</item>
+    </plurals>
+    <plurals name="days_compact">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <string name="today_compact">Today</string>
+    <string name="date_at_time">%1$s at %2$s</string>
+    <string name="duration_label">Duration %1$s</string>
+
+    <!-- Home -->
+    <string name="last_called">Last called %1$s</string>
+    <string name="last_matching_call">Last matching call %1$s</string>
+    <string name="never_called">Never called</string>
+    <string name="no_matching_calls">No matching calls</string>
+    <string name="not_called_recently_title">People not called recently</string>
+    <plurals name="not_called_in_days">
+        <item quantity="one">Not called in %d day</item>
+        <item quantity="other">Not called in %d days</item>
+    </plurals>
+    <plurals name="threshold_chip">
+        <item quantity="one">%d day</item>
+        <item quantity="other">%d days</item>
+    </plurals>
+    <string name="everyone_caught_up">You have called everyone on your list within this period.</string>
+    <string name="watchlist_empty_dashboard">Add the people you want to keep in touch with. Only they appear here.</string>
+    <string name="watchlist_add_people">Add people</string>
+    <string name="watchlist_manage">Edit list</string>
+    <string name="watchlist_title">Keep in touch</string>
+    <string name="watchlist_on_list">On your list</string>
+    <string name="watchlist_suggestions">People you have calls with</string>
+    <string name="watchlist_results">Results</string>
+    <string name="watchlist_search_hint">Search contacts or type a number</string>
+    <string name="watchlist_add_number">Add number %1$s</string>
+    <string name="watchlist_invalid_number">That does not look like a phone number.</string>
+    <string name="watchlist_empty_list">Your list is empty. Search for a contact or type a number to add someone.</string>
+    <string name="watchlist_add">Add to list</string>
+    <string name="watchlist_remove">Remove from list</string>
+    <string name="watchlist_added">On your keep-in-touch list</string>
+    <string name="watchlist_contacts_hint">Allow contacts access to search all your contacts, not only people you have calls with.</string>
+    <string name="no_calls_yet">No calls yet</string>
+    <string name="all_people">Everyone</string>
+    <string name="sort_recent">Recently called</string>
+    <string name="sort_longest">Longest since last call</string>
+    <string name="sort_alpha">Alphabetical</string>
+    <string name="sort_label">Sort</string>
+    <string name="filter_unknown_numbers">Unknown numbers</string>
+    <string name="filters">Filters</string>
+    <string name="syncing">Importing call history…</string>
+    <string name="last_synced">Updated %1$s</string>
+    <string name="sync_failed">Could not read the call log (%1$s).</string>
+    <string name="sync_no_new_calls">Up to date</string>
+    <plurals name="sync_new_calls">
+        <item quantity="one">%d new call imported</item>
+        <item quantity="other">%d new calls imported</item>
+    </plurals>
+
+    <!-- Empty states -->
+    <string name="empty_no_history">No call history available</string>
+    <string name="empty_no_history_body">The device call log is empty, or none of its calls are visible to this app.</string>
+    <string name="empty_grant_call_log">Grant call log permission to import calls.</string>
+    <string name="empty_no_contacts">No contacts with call history</string>
+    <string name="empty_no_outgoing">No outgoing calls found</string>
+    <string name="empty_no_match_filter">No calls match these filters</string>
+    <string name="empty_whatsapp_unavailable">WhatsApp calls are not available in your device call history.</string>
+    <string name="empty_whatsapp_unavailable_body">Android only exposes WhatsApp calls to other apps on some devices. See Settings → About data sources.</string>
+    <string name="empty_search">No people match \"%1$s\"</string>
+    <string name="search_hint">Search by name or number</string>
+
+    <!-- Banners -->
+    <string name="banner_call_log_missing">Call log access is off. New calls cannot be imported.</string>
+    <string name="banner_contacts_missing">Contacts access is off, so numbers are shown instead of names.</string>
+
+    <!-- Details -->
+    <string name="details_last_called">Last called</string>
+    <string name="details_history">History</string>
+    <string name="details_numbers">Phone numbers</string>
+    <string name="details_call_count">%1$d calls stored</string>
+    <string name="details_last_incoming">Most recent call of any kind: %1$s</string>
+    <string name="details_not_found">This person has no stored calls.</string>
+
+    <!-- Onboarding / permissions -->
+    <string name="onboarding_welcome_title">Who haven\'t you called recently?</string>
+    <string name="onboarding_welcome_body">Last Called reads your phone\'s call history and shows how long it has been since you last called each person.\n\nEverything stays on this device. The app has no account, no server and no internet access.</string>
+    <string name="onboarding_call_log_title">Call history</string>
+    <string name="onboarding_call_log_body">To know when you last called someone, the app needs to read your device\'s call log. Calls are copied into the app\'s private storage on this phone and are never sent anywhere.</string>
+    <string name="onboarding_contacts_title">Contact names</string>
+    <string name="onboarding_contacts_body">Contacts access is used only to turn phone numbers into names and photos. Without it, the app shows numbers.</string>
+    <string name="onboarding_whatsapp_title">About WhatsApp calls</string>
+    <string name="onboarding_whatsapp_body">Android does not provide this app with direct access to WhatsApp\'s private call history. Optional notification access can help detect some future WhatsApp call events, but coverage is not guaranteed.\n\nWhatsApp calls that your phone already lists in its call history are imported automatically. You can turn on notification detection later in Settings.</string>
+    <string name="permission_granted">Allowed</string>
+    <string name="permission_denied">Not allowed. You can ask again.</string>
+    <string name="permission_permanently_denied">Blocked. Allow it from the app\'s system settings.</string>
+    <string name="permission_not_requested">Not requested yet</string>
+
+    <!-- Data access screen -->
+    <string name="data_access_title">Permissions &amp; data access</string>
+    <string name="perm_call_log_name">Call log (required)</string>
+    <string name="perm_call_log_desc">Reads the system call history to find your calls.</string>
+    <string name="perm_contacts_name">Contacts (recommended)</string>
+    <string name="perm_contacts_desc">Turns numbers into names and photos.</string>
+    <string name="perm_notifications_name">Notification access (optional)</string>
+    <string name="perm_notifications_desc">Best-effort detection of future WhatsApp calls that your call log does not include. Only WhatsApp call notifications are inspected.</string>
+    <string name="perm_notifications_restricted_hint">If Android says this is a restricted setting, open App info → ⋮ → Allow restricted settings first.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_data">Call history</string>
+    <string name="settings_refresh">Refresh call history</string>
+    <string name="settings_last_sync">Last refreshed: %1$s</string>
+    <string name="settings_never_synced">Not refreshed yet</string>
+    <string name="settings_voip_requested">VoIP calls requested from the system (Android 16.1+ unified call history)</string>
+    <string name="settings_voip_not_requested">This Android version does not offer VoIP calls in the call log</string>
+    <string name="settings_stats">%1$d calls stored · %2$d WhatsApp</string>
+    <string name="settings_manage_permissions">Manage permissions</string>
+    <string name="settings_section_whatsapp">WhatsApp</string>
+    <string name="settings_notification_detection">Detect WhatsApp calls from notifications</string>
+    <string name="settings_notification_detection_desc">Best effort. Only future calls; may stop working if WhatsApp changes its notifications. Duration is approximate.</string>
+    <string name="settings_notification_access_needed">Notification access is not granted yet. Tap to open system settings.</string>
+    <string name="settings_section_display">Display</string>
+    <string name="settings_default_threshold">Default \"not called in\" period</string>
+    <string name="settings_section_reset">Reset</string>
+    <string name="settings_reset_records">Reset imported call records</string>
+    <string name="settings_reset_records_desc">Deletes the calls this app has stored. The next refresh imports what the system call log still holds.</string>
+    <string name="settings_clear_data">Clear app data</string>
+    <string name="settings_clear_data_desc">Deletes all calls, contacts copies and settings stored by this app.</string>
+    <string name="settings_reset_note">This does not delete your phone or WhatsApp call history. It only clears this app\'s local database.</string>
+    <string name="settings_reset_warning">Calls older than what your phone\'s call log still keeps cannot be imported again.</string>
+    <string name="settings_confirm">Delete</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_about_sources">About data sources</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="about_sources_body">• Phone calls come from Android\'s system call log (CallLog).\n\n• WhatsApp calls are imported only when Android itself lists them in the call log and identifies WhatsApp as the calling app. This depends on your Android version (16.1+), your dialer and WhatsApp.\n\n• This app never reads WhatsApp\'s private database or files.\n\n• Optional notification detection can record some future WhatsApp calls. It cannot recover past calls, and its duration and direction are approximate.\n\n• Calls from other VoIP apps are shown with an unknown source rather than guessed.</string>
+    <string name="privacy_body">Call history and contact names are stored only in this app\'s private database on this device.\n\nThe app has no internet permission, no account, no analytics, no crash reporting and no backup to the cloud. Nothing is uploaded or shared.\n\nUninstalling the app or using \"Clear app data\" removes everything it stored.</string>
+</resources>
